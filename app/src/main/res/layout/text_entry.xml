@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/liftNameEditText"
+        android:hint="Enter revised lift name"
+        android:maxLength="30"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/personalBestEditText"
+        android:hint="Enter revised best this year in lbs"
+        android:maxLength="35"
+        android:numeric="integer"/>
+
+
+</LinearLayout>

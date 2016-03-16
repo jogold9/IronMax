@@ -1,0 +1,401 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+        >
+
+        <!-- Row 1 with single column -->
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/exercise_name"
+                android:layout_marginBottom="5dp"
+                android:layout_span="3"
+                android:background="#ffffff"
+                android:fontFamily="sans-serif-condensed"
+                android:padding="18dip"
+                android:text="Exercise name"
+                android:textColor="#000"
+                android:textSize="20sp"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal"
+            >
+
+            <TextView
+                android:id="@+id/oneHundredTwoPercent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="#ececec"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:padding="18dip"
+                android:text="102%"
+                android:textColor="#000000"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/oneHundredTwoPercentValue"
+                android:layout_weight="1"
+                android:background="#ececec"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:padding="18dip"
+                android:text="dummy value"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                />
+            </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/oneHundredPercent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="#ececec"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:padding="18dip"
+                android:text="100%"
+                android:textColor="#000000"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/oneHundredPercentValue"
+                android:layout_weight="1"
+                android:background="#ececec"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:padding="18dip"
+                android:text="dummy value"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                /></TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/ninetyFivePercent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="#ececec"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:padding="18dip"
+                android:text="95%"
+                android:textColor="#000000"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/ninetyFivePercentValue"
+                android:layout_weight="1"
+                android:background="#ececec"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:padding="18dip"
+                android:text="dummy value"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/ninetyPercent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="#ececec"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:padding="18dip"
+                android:text="90%"
+                android:textColor="#000000"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/ninetyPercentValue"
+                android:layout_weight="1"
+                android:background="#ececec"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:padding="18dip"
+                android:text="dummy value"
+                android:textColor="#000000"
+                android:textSize="20sp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/eightyFivePercent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="#ececec"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:padding="18dip"
+                android:text="85%"
+                android:textColor="#000000"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/eightyFivePercentValue"
+                android:layout_weight="1"
+                android:background="#ececec"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:padding="18dip"
+                android:text="dummy value"
+                android:textColor="#000000"
+                android:textSize="20sp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/eightyPercent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="#ececec"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:padding="18dip"
+                android:text="80%"
+                android:textColor="#000000"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/eightyPercentValue"
+                android:layout_weight="1"
+                android:background="#ececec"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:padding="18dip"
+                android:text="dummy value"
+                android:textColor="#000000"
+                android:textSize="20sp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/seventyFivePercent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="#ececec"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:padding="18dip"
+                android:text="75%"
+                android:textColor="#000000"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/seventyFivePercentValue"
+                android:layout_weight="1"
+                android:background="#ececec"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:padding="18dip"
+                android:text="dummy value"
+                android:textColor="#000000"
+                android:textSize="20sp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/seventyPercent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="#ececec"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:padding="18dip"
+                android:text="70%"
+                android:textColor="#000000"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/seventyPercentValue"
+                android:layout_weight="1"
+                android:background="#ececec"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:padding="18dip"
+                android:text="dummy value"
+                android:textColor="#000000"
+                android:textSize="20sp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/sixtyFivePercent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="#ececec"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:padding="18dip"
+                android:text="65%"
+                android:textColor="#000000"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/sixtyFivePercentValue"
+                android:layout_weight="1"
+                android:background="#ececec"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:padding="18dip"
+                android:text="dummy value"
+                android:textColor="#000000"
+                android:textSize="20sp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/sixtyPercent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="#ececec"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:padding="18dip"
+                android:text="60%"
+                android:textColor="#000000"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/sixtyPercentValue"
+                android:layout_weight="1"
+                android:background="#ececec"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:padding="18dip"
+                android:text="dummy value"
+                android:textColor="#000000"
+                android:textSize="20sp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/fiftyFivePercent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="#ececec"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:padding="18dip"
+                android:text="55%"
+                android:textColor="#000000"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/fiftyFivePercentValue"
+                android:layout_weight="1"
+                android:background="#ececec"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:padding="18dip"
+                android:text="dummy value"
+                android:textColor="#000000"
+                android:textSize="20sp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/fiftyPercent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="#ececec"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:padding="18dip"
+                android:text="50%"
+                android:textColor="#000000"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/fiftyPercentValue"
+                android:layout_weight="1"
+                android:background="#ececec"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:padding="18dip"
+                android:text="dummy value"
+                android:textColor="#000000"
+                android:textSize="20sp"/>
+        </TableRow>
+    </TableLayout>
+</ScrollView>
+
