@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">Iron Max</string>
-    <string name="add_lift">Add lift</string>
+    <string name="add_lift">Add New Row</string>
 </resources>

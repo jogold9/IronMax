@@ -5,11 +5,18 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    private static final int ADD_ROW = 1;  //used for case statement statement to select menu item
     private RecyclerView recyclerView;
-
+    public Exercises exercises = new Exercises();
+    public ExerciseRow adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +31,8 @@ public class MainActivity extends AppCompatActivity {
         actionBar.setTitle("  " + "Iron Max");
 
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
-        ExerciseRow adapter = new ExerciseRow(this);
+        //ExerciseRow adapter = new ExerciseRow(this);
+        adapter = new ExerciseRow(this);
         recyclerView.setAdapter(adapter);
 
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
@@ -33,5 +41,49 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+       /* MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.add_row, menu);
+        return super.onCreateOptionsMenu(menu);*/
+
+        menu.add(0, ADD_ROW, 0, "Add New Row");
+        menu.getItem(0).setIcon(R.drawable.plus);
+
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        menu.getItem(0).setIcon(R.drawable.plus);
+
+        return super.onPrepareOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int length;
+
+        switch (item.getItemId()) {
+            case 1:
+                Toast msg = Toast.makeText(MainActivity.this, "Test code for adding an exercise", Toast.LENGTH_LONG);
+                msg.show();
+
+                exercises.addExercise("Some exercise");
+                exercises.addPersonalBest(500);
+                length = exercises.getExercisesArrayLength();
+
+               //call notify data set changed method for the adapter
+                adapter.notifyItemInserted(length - 1);
+                adapter.notifyDataSetChanged();
+
+                return super.onOptionsItemSelected(item);
+
+
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
 }
 

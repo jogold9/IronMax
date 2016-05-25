@@ -5,7 +5,8 @@
         android:id="@+id/plus"
         android:icon="@drawable/plus"
         android:orderInCategory="100"
-        android:showAsAction="always"
+
         android:title="@string/add_lift"
+        android:showAsAction="ifRoom|withText"
         app:title="@string/add_lift"/>
 </menu>
