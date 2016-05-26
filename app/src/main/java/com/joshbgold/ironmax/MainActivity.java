@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
                 length = exercises.getExercisesArrayLength();
 
                //call notify data set changed method for the adapter
-                adapter.notifyItemInserted(length - 1);
+                //adapter.notifyItemInserted(length - 1);
                 adapter.notifyDataSetChanged();
 
                 return super.onOptionsItemSelected(item);

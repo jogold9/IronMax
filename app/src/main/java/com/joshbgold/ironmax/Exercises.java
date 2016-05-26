@@ -4,7 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
-public class Exercises extends AppCompatActivity {
+public class Exercises {
 
     public ArrayList<String> exercisesArrayList = new ArrayList<>();  //stores all the lifts
 
@@ -57,11 +57,11 @@ public class Exercises extends AppCompatActivity {
 
     public Exercises() { //constructor
 
-/*    exercisesArrayList.add("Use settings menu to add lift");
+        exercisesArrayList.add("Use settings menu to add lift");
         personalBestsArrayList.add(100);
 
         exercisesArrayList.add("front squat");
-        personalBestsArrayList.add(135);*/
+        personalBestsArrayList.add(135);
     }
 
 }

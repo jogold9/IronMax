@@ -19,13 +19,12 @@ public class ExerciseRow extends RecyclerView.Adapter<ExerciseRow.ExerciseViewHo
 
     String exerciseName = "burpee";
     String exercisePR = "100";  // user's personal record for this exercise in pounds
-
-    private Context context;
     Exercises exercises = new Exercises();
 
+    private Context context;
 
     public ExerciseRow(Context context) {
-        this.context = context;
+        //this.context = context;
     }
 
     @Override
