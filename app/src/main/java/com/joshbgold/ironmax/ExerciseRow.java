@@ -37,8 +37,8 @@ public class ExerciseRow extends RecyclerView.Adapter<ExerciseRow.ExerciseViewHo
 
     @Override
     public void onBindViewHolder(ExerciseViewHolder holder, int position) {
-        ArrayList<String> exercisesArray = exercises.getExercisesArray();
-        holder.bindExercises(exercisesArray.get(position));
+        //ArrayList<String> exercisesArray = exercises.getExercisesArray();
+        holder.bindExercises();
     }
 
     @Override
@@ -53,7 +53,6 @@ public class ExerciseRow extends RecyclerView.Adapter<ExerciseRow.ExerciseViewHo
         public ImageView edit_Icon;
         public ImageView percentages_Icon;
         public ImageView trash_Icon;
-        public ImageView plus_icon;
         public ImageView facebook_icon;
         public ImageView twitter_icon;
 
@@ -65,19 +64,8 @@ public class ExerciseRow extends RecyclerView.Adapter<ExerciseRow.ExerciseViewHo
             edit_Icon = (ImageView) itemView.findViewById(R.id.list_item_pencil);
             percentages_Icon = (ImageView) itemView.findViewById(R.id.list_item_percent);
             trash_Icon = (ImageView) itemView.findViewById(R.id.list_item_trash);
-            plus_icon = (ImageView) itemView.findViewById(R.id.list_item_plus);
             facebook_icon = (ImageView) itemView.findViewById(R.id.list_item_facebook);
             twitter_icon = (ImageView) itemView.findViewById(R.id.list_item_twitter);
-
-            View.OnClickListener plus = new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    // allow user to add a new exercise and personal best
-                    exercises.addExercise("Some exercise");
-                    exercises.addPersonalBest(500);
-                    notifyDataSetChanged();
-                }
-            };
 
             View.OnClickListener edit = new View.OnClickListener() {
                 @Override
@@ -122,18 +110,16 @@ public class ExerciseRow extends RecyclerView.Adapter<ExerciseRow.ExerciseViewHo
                 }
             };
 
-                plus_icon.setOnClickListener(plus);
                 edit_Icon.setOnClickListener(edit);
                 percentages_Icon.setOnClickListener(percentages);
                 trash_Icon.setOnClickListener(trash);
             }
 
-        public void bindExercises(String exercises) {
+        public void bindExercises() {
             Exercises exercisesObject = new Exercises();
             exerciseNameTextView.setText(exercisesObject.getExercise(getAdapterPosition()));
-            personalRecordTextView.setText((exercisesObject.getPersonalBest(getAdapterPosition())).toString() + " pounds");
+            personalRecordTextView.setText(String.format("%s pounds", (exercisesObject.getPersonalBest(getAdapterPosition())).toString()));
         }
-
     }
 
     private void startPercentagesActivity(String some_exercise, String personal_record) {

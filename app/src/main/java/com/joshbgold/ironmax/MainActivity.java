@@ -31,34 +31,19 @@ public class MainActivity extends AppCompatActivity {
         actionBar.setTitle("  " + "Iron Max");
 
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
-        //ExerciseRow adapter = new ExerciseRow(this);
         adapter = new ExerciseRow(this, exercises);
         recyclerView.setAdapter(adapter);
 
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
-
-        recyclerView.setHasFixedSize(true);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-
-       /* MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.add_row, menu);
-        return super.onCreateOptionsMenu(menu);*/
-
         menu.add(0, ADD_ROW, 0, "Add New Row");
         menu.getItem(0).setIcon(R.drawable.plus);
 
         return super.onCreateOptionsMenu(menu);
-    }
-
-    @Override
-    public boolean onPrepareOptionsMenu(Menu menu) {
-        menu.getItem(0).setIcon(R.drawable.plus);
-
-        return super.onPrepareOptionsMenu(menu);
     }
 
     @Override
@@ -71,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
                 msg.show();
 
                 exercises.addExercise("Some exercise");
-                exercises.addPersonalBest(500);
+                //exercises.addPersonalBest(500);
 
                //call notify data set changed method for the adapter
                 adapter.notifyDataSetChanged();

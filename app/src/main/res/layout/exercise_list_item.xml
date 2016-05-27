@@ -55,12 +55,6 @@
             android:src="@drawable/percent_icon"
             />
 
-        <ImageView
-            android:id="@+id/list_item_trash"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:src="@drawable/ic_action_delete"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="0dp"
@@ -69,7 +63,7 @@
         android:layout_gravity="center"
         android:orientation="vertical">
 
-        <ImageView
+        ImageView
             android:id="@+id/list_item_plus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -94,6 +88,13 @@
             android:layout_gravity="center"
             android:src="@drawable/ic_twitter_logo_blue"
             />
+
+        <ImageView
+            android:id="@+id/list_item_trash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_action_delete"/>
 
     </LinearLayout>
 
