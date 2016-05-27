@@ -23,8 +23,9 @@ public class ExerciseRow extends RecyclerView.Adapter<ExerciseRow.ExerciseViewHo
 
     private Context context;
 
-    public ExerciseRow(Context context) {
-        //this.context = context;
+    public ExerciseRow(Context context, Exercises exercises) {
+        this.context = context;
+        this.exercises = exercises;
     }
 
     @Override

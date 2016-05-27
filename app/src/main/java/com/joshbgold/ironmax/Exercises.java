@@ -14,7 +14,7 @@ public class Exercises {
         return exercisesArrayList;
     }
 
-    public ArrayList<Integer> getPersonalBests() {  //returns the whole personal bests arraylist
+    public ArrayList<Integer> getPersonalBestArray() {  //returns the whole personal bests arraylist
         return personalBestsArrayList;
     }
 
